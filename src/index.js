@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.post('/webhook', (req, res) => {
+  console.log('Recibiendo evento de stripe');
+  res.send('Hello World!');
+});
+
 app.listen(3001, () => {
   console.log('Example app listening on port 3000!');
 });
